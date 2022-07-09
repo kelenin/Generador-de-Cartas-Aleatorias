@@ -15,34 +15,38 @@ body {
   position: relative;
   font-size: 80px;
 }
-.card-top:before {
+
+.card:before {
   position: absolute;
   left: 20px;
   top: 20px;
   font-size: 80px;
 }
-.card-bottom:after {
+
+.card:after {
   position: absolute;
   right: 20px;
   bottom: 20px;
   font-size: 80px;
 }
-.card-top::before,
-.card-bottom::after {
-  content: "♠"; /*spades*/
+
+.card.spade:before,
+.card.spade:after {
+  content: "\2660";
 }
 
-.card-top::before,
-.card-bottom::after {
-  content: "♣"; /*clubs*/
+.card.club:before,
+.card.club:after {
+  content: "\2663";
 }
-.card-top::before,
-.card-bottom::after {
-  content: "♥"; /*hearts*/
+
+.card.heart:before,
+.card.heart:after {
+  content: "\2665";
   color: red;
 }
-.card-top::before,
-.card-bottom::after {
-  content: "♦"; /*diams*/
+.card.diamond:before,
+.card.diamond:after {
+  content: "\2666";
   color: red;
 }
