@@ -16,15 +16,33 @@ body {
   position: relative;
   font-size: 80px;
 }
-.card-top {
+&::before {
   position: absolute;
   left: 20px;
   top: 20px;
   font-size: 80px;
 }
-.card-bottom {
+&::after {
   position: absolute;
   right: 20px;
   bottom: 20px;
   font-size: 80px;
+}
+&.spade::before,
+&.spade::after {
+  content: "\2660";
+}
+&.club::before,
+&.club::after {
+  content: "\2663";
+}
+&.heart::before,
+&.heart::after {
+  content: "\2665";
+  color: red;
+}
+&.diamond::before,
+&.diamond::after {
+  content: "\2666";
+  color: red;
 }
