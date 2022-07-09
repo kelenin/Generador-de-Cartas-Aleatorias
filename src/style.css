@@ -4,7 +4,6 @@ body {
 }
 .card {
   text-align: center;
-  display: inline-block;
   background: white;
   margin: auto;
   height: 200px;
